@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    font-size: 4vmin; 
+    top: 0;
+    left: 0;
+    right: 0;
+    
+
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+nav li a {
+    margin: .5rem;
+    padding: .2rem;
+    color: #000000DE;
+    text-decoration: none;
+}
+
+.btn-2 {
+    background-color: rgb(63, 133, 244) ;
+    color: #fff;
+    padding: .6rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: -0.5rem;
+   
+}
+
+
+body{
+    background: #fff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+hr {
+    color: black;
+    opacity: .3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+}
+
+.child-div {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.search-bar {
+    display: block;
+    border: 1px solid #5F6368;
+    border-radius: 30px;
+    width: 60vw;
+    height: 7.5vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.search-bar:hover {
+    box-shadow: 0 8px 8px #000;
+}
+
+.btn {
+    background: #F2F2F2;
+    color: black;
+    margin: .9rem;
+    padding: .3rem .6rem;
+    font-size: 2.8vmin;
+    border: none;
+    
+
+}
+
+
+
+.lang-list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.lang-link {
+    margin: .2rem;
+    padding: .3rem;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    margin-top: 5rem;
+    color: #5F6368;
+}
+
+.footer-right {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.footer-left {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-link {
+margin: .3rem;
+padding: .8rem;
+text-decoration: none;
+color: #5F6368;
+}
+
+@media (min-width: 350px){
+    .footer-right, .footer-left, .lang-list {
+        flex-wrap: wrap;
+    }
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+@media (min-width: 350px) {
+    .btn {
+        margin: .3rem;
+    }
+}
+
+@media (min-width:350px) {
+.search-bar{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+}
